@@ -16,7 +16,7 @@
             $cnpj = $_POST['cnpj'];
             $endereco = $_POST['endereco'];
 
-            $sql = "UPDATE aluno SET nome = '$nome', email = '$email' WHERE id = $id;";
+            $sql = "UPDATE condominio SET nome = '$nome', cnpj = '$cnpj', endereco = '$endereco' WHERE id = $id;";
 
             if ($mysqli->query($sql) == true) {
                 echo "Condomínio editado";
